@@ -1,0 +1,111 @@
+/* Estilo geral */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #f9db59;
+    color: #a12312;
+    display: flex;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*position: fixed;
+    width: 100%;*/
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #a12312;
+    text-decoration: none;
+}
+
+/* Seções */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.conteiner_seta{
+    display: flex;
+    justify-content: flex-end;
+}
+div.seta{
+    width: 50px;
+    height: 50px;
+    background-image: url("fotos/seta.png");
+    background-size: cover;
+}
+/* Cardápio */
+.cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.item p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.item .preco {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.btn_comprar{
+    font-size: 1.2em;
+    background-color: red;
+    color: #fff;
+    margin-top: 5px;
+    font-weight: bold;
+    border: 1px solid red;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
