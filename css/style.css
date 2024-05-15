@@ -1,42 +1,106 @@
 /* Estilo geral */
 body {
     font-family: sans-serif;
-    margin: 0;
+    margin: 5px;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #f9db59;
-    color: #a12312;
+.logo h1{
+    color: black;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-family: OCR A Std, monospace;
+}
+
+.menu_principal{
     display: flex;
-    padding: 20px 0;
-    flex-wrap: wrap;
     justify-content: space-around;
-    /*position: fixed;
-    width: 100%;*/
+    align-items: center;
+    height: 8vh;
+    background-color: #f9db59;
+    width: 100%;
+    position: fixed;
 }
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
+.nav_list{
+    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
+.nav_list li{
+    margin-left: 32px;
 }
+.mobile_menu{
+    cursor: pointer;
+    float: right;
+    display: none;
 
-nav a {
-    color: #a12312;
+}
+.mobile_menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #333;
+    margin: 8px;
+}
+.menu_principal ul a{
+    color: black;
     text-decoration: none;
+    padding: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
+.menu_principal ul a:hover{
+    background-color: red;
+    color:#fff;
+}
+
+
+
+@media  screen and (max-width:999px){
+    header{
+        margin-top: -5px;
+    }
+    .gambiarra{
+        height: 45px;
+    }
+    .nav_list{
+        position: fixed;
+        top: 5vh;
+        right: 0;
+        width: 40vw;
+        height: 92vh;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+        background: #f9db59;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav_list li{
+        margin-left: 0px;
+    }
+    
+    .mobile_menu{
+        display: block;
+    }
+    .nav_list.active{
+        transform: translateX(0);
+    }
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+}
 /* Seções */
 section {
     padding: 20px;
