@@ -166,6 +166,27 @@ div.seta{
     font-weight: bold;
     border: 1px solid red;
 }
+
+.quantidade_produto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.quantidade_produto button{
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    text-align: center;
+    margin:4px 2px ;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.quantidade_produto span{
+    margin: 0 10px;
+    font-size: 18px;
+}
 /* Footer */
 footer {
     background-color: #333;

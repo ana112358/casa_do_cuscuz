@@ -44,8 +44,14 @@
                     <h3>Cuscuz Marroquino</h3>
                     <p>Saboroso cuscuz com especiarias marroquinas e legumes.</p>
                     <span class="preco">R$ 12,90</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
                     <div>
-                        <button class="btn_comprar">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
                     </div>
                 </div>
                 <div class="item">
@@ -53,8 +59,14 @@
                     <h3>Cuscuz Nordestino</h3>
                     <p>Tradicional cuscuz com leite de coco e queijo coalho.</p>
                     <span class="preco">R$ 10,90</span>
+                    
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('nordestino')">&lt;</button>
+                        <span id="quantidade_nordestino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('nordestino')">&gt;</button>
+                    </div>
                     <div>
-                        <button class="btn_comprar">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('nordestino',10.9)">Comprar</button>
                     </div>
                 </div>
                 <div class="item">
@@ -62,8 +74,13 @@
                     <h3>Cuscuz de Tapioca</h3>
                     <p>Leve e saboroso cuscuz feito com tapioca e leite de coco.</p>
                     <span class="preco">R$ 9,90</span>
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('cuscuz_tapioca')">&lt;</button>
+                        <span id="quantidade_cuscuz_tapioca_desejada">0</span>
+                        <button onclick="aumentarQuantidade('cuscuz_tapioca')">&gt;</button>
+                    </div>
                     <div>
-                        <button class="btn_comprar">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('cuscuz_tapioca',9.9)">Comprar</button>
                     </div>
                 </div>
                 </div>
@@ -72,7 +89,6 @@
                         <div class="seta"></div>
                         
                     </a> 
-                    <p>Topo</p>
                  </div>
         </section>
 
@@ -94,8 +110,13 @@
                     <h3>Frango Desfiado</h3>
                     <p>Frango desfiado com catupiry e requeijão.</p>
                     <span class="preco">R$ 4,50</span>
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('frango')">&lt;</button>
+                        <span id="quantidade_frango_desejada">0</span>
+                        <button onclick="aumentarQuantidade('frango')">&gt;</button>
+                    </div>
                     <div>
-                        <button class="btn_comprar">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('frango',4.5)">Comprar</button>
                     </div>
                 </div>
                 <div class="item">
@@ -112,7 +133,6 @@
                         <div class="seta"></div>
                         
                     </a> 
-                    <p>Topo</p>
                  </div>
         </section>
 
@@ -144,6 +164,7 @@
                     <span class="preco">R$ 4,00</span>
                     <div>
                         <button class="btn_comprar">Comprar</button>
+                        <button>quantidade </button>
                     </div>
                     
                 </div>
@@ -154,13 +175,14 @@
                         <div class="seta"></div>
                         
                     </a> 
-                    <p>Topo</p>
                  </div>
         </section>
     <script src="script.js"></script>
     
     </main>
-    <script src="javascript/nav_bar.js"></script>            
+    <script src="javascript/carrinho.js"></script>
+    <script src="javascript/nav_bar.js"></script>  
+
 </body>
 </html>
                 
