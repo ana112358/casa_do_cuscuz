@@ -19,7 +19,7 @@
                 <div class="linha2"></div>
                 <div class="linha3"></div>
             </div>
-
+            
             <ul class="nav_list">
                 <li><a class="tipos-cuscuz" href="#tipos-cuscuz">Tipos de Cuscuz</a></li>
                 <li><a class="recheios" href="#recheios">Recheios</a></li>
@@ -39,11 +39,12 @@
             </div>
             <h2>Tipos de Cuscuz</h2>
             <div class="cardapio">
+            <!--Item 1-->
                 <div class="item">
                     <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz Marroquino</h3>
-                    <p>Saboroso cuscuz com especiarias marroquinas e legumes.</p>
-                    <span class="preco">R$ 12,90</span>
+                    <h3>Cuscuz com Manteiga</h3>
+                    <p>Tradicional cuscuz de milho, servido com manteiga derretida.</p>
+                    <span class="preco">R$ 8,00</span>
                    
                     <div class="quantidade_produto">
                         <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
@@ -54,11 +55,12 @@
                         <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
                     </div>
                 </div>
+            <!--Item 2-->
                 <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Nordestino">
-                    <h3>Cuscuz Nordestino</h3>
-                    <p>Tradicional cuscuz com leite de coco e queijo coalho.</p>
-                    <span class="preco">R$ 10,90</span>
+                    <img src="fotos/cuscuz_ovo.avif" alt="Cuscuz Nordestino">
+                    <h3>Cuscuz com Ovo e Queijo</h3>
+                    <p>Cuscuz de milho acompanhado de ovo e queijo coalho.</p>
+                    <span class="preco">R$ 10,00</span>
                     
                     <div class="quantidade_produto">
                         <button onclick="diminuirQuantidade('nordestino')">&lt;</button>
@@ -69,11 +71,12 @@
                         <button class="btn_comprar" onclick="adicionarCarrinho('nordestino',10.9)">Comprar</button>
                     </div>
                 </div>
+                <!--Item 3-->
                 <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz de Tapioca">
-                    <h3>Cuscuz de Tapioca</h3>
-                    <p>Leve e saboroso cuscuz feito com tapioca e leite de coco.</p>
-                    <span class="preco">R$ 9,90</span>
+                    <img src="fotos/cuscuz_queijo_carne_sol.jpg" alt="Cuscuz de Tapioca">
+                    <h3>Cuscuz com Carne de Sol</h3>
+                    <p>Cuscuz de milho servido com carne de sol suculenta.</p>
+                    <span class="preco">R$ 12,00</span>
                     <div class="quantidade_produto">
                         <button onclick="diminuirQuantidade('cuscuz_tapioca')">&lt;</button>
                         <span id="quantidade_cuscuz_tapioca_desejada">0</span>
@@ -83,6 +86,246 @@
                         <button class="btn_comprar" onclick="adicionarCarrinho('cuscuz_tapioca',9.9)">Comprar</button>
                     </div>
                 </div>
+
+                <!--Item 4-->
+                <div class="item">
+                    <img src="fotos/cuscuz_carne_nata.jp" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Carne de Sol na Nata</h3>
+                    <p>Cuscuz de milho com carne de sol envolta em um cremoso molho de nata.</p>
+                    <span class="preco">R$ 15,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 5-->
+                <div class="item">
+                    <img src="fotos/cuscuz_frango_requeijão.png" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Frango Desfiado e Requeijão</h3>
+                    <p> Cuscuz de milho com frango desfiado e cremoso requeijão.</p>
+                    <span class="preco">R$ 13,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+                
+                 <!--Item 6-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Banana da Terra e Queijo Coalho</h3>
+                    <p>Cuscuz de milho acompanhado de banana da terra e queijo coalho</p>
+                    <span class="preco"> R$ 12,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 7-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Charque e Vinagrete</h3>
+                    <p>Cuscuz de milho servido com charque e vinagrete fresco.</p>
+                    <span class="preco">R$ 14,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 8-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Creme de Camarão</h3>
+                    <p>Cuscuz de milho com um delicioso creme de camarão</p>
+                    <span class="preco">R$ 18,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 9-->
+                <div class="item">
+                    <img src="fotos/cuscuz_calabresa.avif" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Calabresa Acebolada</h3>
+                    <p>Cuscuz de milho acompanhado de calabresa acebolada.</p>
+                    <span class="preco">R$ 13,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 10-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz de milho servido com costela desfiada</h3>
+                    <p>Tradicional cuscuz de milho, servido com manteiga derretida.</p>
+                    <span class="preco">R$ 16,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 11-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Creme de Queijo</h3>
+                    <p>Cuscuz de milho com um cremoso creme de queijo.</p>
+                    <span class="preco">R$ 14,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 12-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Omelete</h3>
+                    <p>Cuscuz de milho servido com um delicioso omelete.</p>
+                    <span class="preco">R$ 11,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 13-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Peixe</h3>
+                    <p>Cuscuz de milho acompanhado de peixe fresquinho.</p>
+                    <span class="preco">R$ 17,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                                <!--Item 13-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Peixe</h3>
+                    <p>Cuscuz de milho acompanhado de peixe fresquinho.</p>
+                    <span class="preco">R$ 17,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+                <!--Item 14-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Coco</h3>
+                    <p>Cuscuz de milho com saborosas lascas de coco.</p>
+                    <span class="preco">R$ 10,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                <!--Item 15-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Cheddar e Bacon</h3>
+                    <p>Cuscuz de milho com cheddar derretido e bacon crocante.</p>
+                    <span class="preco">R$ 14,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
+                </div>
+
+                <!--Item 16-->
+                <div class="item">
+                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                    <h3>Cuscuz com Tudo Dentro</h3>
+                    <p> Cuscuz de milho com uma mistura deliciosa de todos os ingredientes.</p>
+                    <span class="preco">R$ 20,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
+                        <span id="quantidade_marroquino_desejada">0</span>
+                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                    </div>
+                </div>
+
                 </div>
                 <div class="conteiner_seta">
                     <a href="#topo">
@@ -90,6 +333,8 @@
                         
                     </a> 
                  </div>
+
+
         </section>
 
         <section id="recheios">
