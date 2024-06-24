@@ -424,7 +424,29 @@
         </section>
         <section id="carrinho">
             <h2>Carrinho de Compras</h2>
-            <ul id="carrinho_itens"></ul> <!-- Adicione este elemento para exibir o carrinho -->
+            <table id="tabela_carrinho">
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas dos produtos serão inseridas aqui -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td id="total_carrinho"></td>
+                    </tr>
+                </tfoot>
+            </table>
+           
+            <div>
+                <button class="btn_comprar">Finalizar pedido</button>
+            </div>
         </section>
     </main>
     

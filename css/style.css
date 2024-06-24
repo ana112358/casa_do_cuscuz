@@ -187,6 +187,19 @@ div.seta{
     margin: 0 10px;
     font-size: 18px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
 /* Footer */
 footer {
     background-color: #333;

@@ -45,17 +45,43 @@ function adicionarCarrinho(nomeProduto,precoProduto){
     atualizarCarrinho();
 }
 function atualizarCarrinho() {
-    const listaCarrinho = document.getElementById('carrinho_itens');
-    listaCarrinho.innerHTML = '';
+    const tabelaCarrinho = document.getElementById('tabela_carrinho').getElementsByTagName('tbody')[0];
+    tabelaCarrinho.innerHTML = '';
     let total = 0;
-    produtos_carrinho.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)} x ${item.quantidade}`;
-        listaCarrinho.appendChild(li);
+    produtos_carrinho.forEach((item, index) => {
+        const linha = document.createElement('tr');
+
+        const celulaNome = document.createElement('td');
+        celulaNome.textContent = item.nome;
+        linha.appendChild(celulaNome);
+
+        const celulaPreco = document.createElement('td');
+        celulaPreco.textContent = `R$ ${item.preco.toFixed(2)}`;
+        linha.appendChild(celulaPreco);
+
+        const celulaQuantidade = document.createElement('td');
+        celulaQuantidade.textContent = item.quantidade;
+        linha.appendChild(celulaQuantidade);
+
+        const celulaRemover = document.createElement('td');
+                const botaoRemover = document.createElement('button');
+                botaoRemover.textContent = 'x';
+                botaoRemover.onclick = () => removerItem(index);
+                celulaRemover.appendChild(botaoRemover);
+                linha.appendChild(celulaRemover);
+
+        tabelaCarrinho.appendChild(linha);
         total += item.preco * item.quantidade;
     });
 
-    const totalElement = document.createElement('li');
-    totalElement.textContent = `Total: R$ ${total.toFixed(2)}`;
-    listaCarrinho.appendChild(totalElement);
+    const totalCompra = document.getElementById('total_carrinho');
+    totalCompra.textContent = `Total: R$ ${total.toFixed(2)}`;
+    listaCarrinho.appendChild(totalCompra);
 }
+
+function removerItem(index) {
+    produtos_carrinho.splice(index, 1); // Remove o item do array
+    atualizarCarrinho(); // Atualiza a tabela
+}
+atualizarCarrinho();
+
