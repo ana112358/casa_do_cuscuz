@@ -188,6 +188,11 @@ div.seta{
     font-size: 18px;
 }
 
+#carrinho{
+    display: block;
+    height: 600px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;

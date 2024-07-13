@@ -83,5 +83,24 @@ function removerItem(index) {
     produtos_carrinho.splice(index, 1); // Remove o item do array
     atualizarCarrinho(); // Atualiza a tabela
 }
+function enviarPedido() {
+    if (produtos_carrinho.length === 0) {
+        alert("O carrinho está vazio. Adicione itens ao carrinho antes de enviar o pedido.");
+        return;
+    }
+
+    let mensagem = "Olá, gostaria de fazer o seguinte pedido:\n\n";
+    produtos_carrinho.forEach(item => {
+        mensagem += `- ${item.nome} (R$ ${item.preco.toFixed(2)}) x ${item.quantidade}\n`;
+    });
+    const total = produtos_carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
+    mensagem += `\nTotal: R$ ${total.toFixed(2)}\n\nObrigado!`;
+
+    const whatsappURL = `https://api.whatsapp.com/send?phone=seu_numero&text=${encodeURIComponent(mensagem)}`;
+    window.open(whatsappURL, '_blank');
+}
+
+document.getElementById('enviar_pedido').addEventListener('click', enviarPedido);
+
 atualizarCarrinho();
 
