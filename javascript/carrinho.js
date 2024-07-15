@@ -27,7 +27,7 @@ function diminuirQuantidade(nome_produto){
 
 function adicionarCarrinho(nomeProduto,precoProduto){
     const quantidade = quantidade_desejada[nomeProduto] || 0;
-
+    aumentarCarrinho();
     if (quantidade > 0) {
         const itemExistenteIndex = produtos_carrinho.findIndex(item => item.nome === nomeProduto);
         if (itemExistenteIndex > -1) {
