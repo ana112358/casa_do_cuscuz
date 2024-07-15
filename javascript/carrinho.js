@@ -95,8 +95,8 @@ function enviarPedido() {
     });
     const total = produtos_carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
     mensagem += `\nTotal: R$ ${total.toFixed(2)}\n\nObrigado!`;
-
-    const whatsappURL = `https://api.whatsapp.com/send?phone=seu_numero&text=${encodeURIComponent(mensagem)}`;
+    const numeroWhatsApp = '+55084986720257';
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
     window.open(whatsappURL, '_blank');
 }
 
