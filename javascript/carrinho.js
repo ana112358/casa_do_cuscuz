@@ -1,5 +1,6 @@
 let produtos_carrinho = [];
 let quantidade_desejada = {};
+let contagem_carrinho = 0;
 
 function aumentarQuantidade(nome_produto){
     if (!quantidade_desejada[nome_produto]) {
@@ -100,7 +101,13 @@ function enviarPedido() {
     window.open(whatsappURL, '_blank');
 }
 
+function aumentarCarrinho(){
+    ++contagem_carrinho;
+    document.querySelector('.cart-count').textContent = contagem_carrinho;
+}
+
 document.getElementById('enviar_pedido').addEventListener('click', enviarPedido);
+
 
 atualizarCarrinho();
 
