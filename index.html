@@ -31,9 +31,8 @@
             <ul class="nav_list">
                 <li><a class="sobremesas" href="#carrinho">Carrinho</a></li>
                 <li><a class="tipos-cuscuz" href="#tipos-cuscuz">Tipos de Cuscuz</a></li>
-                <li><a class="recheios" href="#recheios">Recheios</a></li>
-                <li><a class="acompanhamentos" href="#acompanhamentos">Acompanhamentos</a></li>
                 <li><a class="bebidas" href="#bebidas">Bebidas</a></li>
+                <li><a class="Sobremesas" href="#sobremesas">Sobremesas</a></li>
  
             </ul>
         </nav>
@@ -49,23 +48,23 @@
             <h2>Tipos de Cuscuz</h2>
             <div class="cardapio">
             <!--Item 1-->
-                <div class="item">
+                <div class="item" id="cuscuzManteiga">
                     <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
                     <h3>Cuscuz com Manteiga</h3>
                     <p>Tradicional cuscuz de milho, servido com manteiga derretida.</p>
                     <span class="preco">R$ 8,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('cuscuzManteiga')">&lt;</button>
+                        <span id="quantidade_cuscuzManteiga_desejada">0</span>
+                        <button onclick="aumentarQuantidade('cuscuzManteiga')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('cuscuzManteiga',8.0)">Comprar</button>
                     </div>
                 </div>
             <!--Item 2-->
-                <div class="item">
+                <div class="item" id="nordestino">
                     <img src="fotos/cuscuz_ovo.avif" alt="Cuscuz Nordestino">
                     <h3>Cuscuz com Ovo e Queijo</h3>
                     <p>Cuscuz de milho acompanhado de ovo e queijo coalho.</p>
@@ -77,11 +76,11 @@
                         <button onclick="aumentarQuantidade('nordestino')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('nordestino',10.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('nordestino',10.0)">Comprar</button>
                     </div>
                 </div>
                 <!--Item 3-->
-                <div class="item">
+                <div class="item" id="cuscuz_tapioca">
                     <img src="fotos/cuscuz_queijo_carne_sol.jpg" alt="Cuscuz de Tapioca">
                     <h3>Cuscuz com Carne de Sol</h3>
                     <p>Cuscuz de milho servido com carne de sol suculenta.</p>
@@ -92,337 +91,228 @@
                         <button onclick="aumentarQuantidade('cuscuz_tapioca')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('cuscuz_tapioca',9.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('cuscuz_tapioca',12.0)">Comprar</button>
                     </div>
                 </div>
 
                 <!--Item 4-->
-                <div class="item">
-                    <img src="fotos/cuscuz_carne_nata.jp" alt="Cuscuz Marroquino">
+                <div class="item" id="carnedeSol">
+                    <img src="fotos/cuscuz_carne_nata.jpg" alt="Cuscuz Marroquino">
                     <h3>Cuscuz com Carne de Sol na Nata</h3>
                     <p>Cuscuz de milho com carne de sol envolta em um cremoso molho de nata.</p>
                     <span class="preco">R$ 15,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('carnedeSol')">&lt;</button>
+                        <span id="quantidade_carnedeSol_desejada">0</span>
+                        <button onclick="aumentarQuantidade('carnedeSol')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('carnedeSol',15.0)">Comprar</button>
                     </div>
                 </div>
 
                 <!--Item 5-->
-                <div class="item">
+                <div class="item" id="requeijao">
                     <img src="fotos/cuscuz_frango_requeijão.png" alt="Cuscuz Marroquino">
                     <h3>Cuscuz com Frango Desfiado e Requeijão</h3>
                     <p> Cuscuz de milho com frango desfiado e cremoso requeijão.</p>
                     <span class="preco">R$ 13,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('requeijao')">&lt;</button>
+                        <span id="quantidade_requeijao_desejada">0</span>
+                        <button onclick="aumentarQuantidade('requeijao')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('requijao',13.0)">Comprar</button>
                     </div>
                 </div>
                 
                  <!--Item 6-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                <div class="item" id="banana">
+                    <img src="fotos/banana_queijo.jpeg" alt="Cuscuz Marroquino">
                     <h3>Cuscuz com Banana da Terra e Queijo Coalho</h3>
                     <p>Cuscuz de milho acompanhado de banana da terra e queijo coalho</p>
                     <span class="preco"> R$ 12,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('banana')">&lt;</button>
+                        <span id="quantidade_banana_desejada">0</span>
+                        <button onclick="aumentarQuantidade('banana')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('banana',12.0)">Comprar</button>
                     </div>
                 </div>
 
                 <!--Item 7-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                <div class="item" id="charque">
+                    <img src="fotos/charqui_vinagrete.jpg" alt="Cuscuz Marroquino">
                     <h3>Cuscuz com Charque e Vinagrete</h3>
                     <p>Cuscuz de milho servido com charque e vinagrete fresco.</p>
                     <span class="preco">R$ 14,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('charque')">&lt;</button>
+                        <span id="quantidade_charque_desejada">0</span>
+                        <button onclick="aumentarQuantidade('charque')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('charque',14.0)">Comprar</button>
                     </div>
                 </div>
 
                 <!--Item 8-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
+                <div class="item" id="camarao">
+                    <img src="fotos/camarao.webp" alt="Cuscuz Marroquino">
                     <h3>Cuscuz com Creme de Camarão</h3>
                     <p>Cuscuz de milho com um delicioso creme de camarão</p>
                     <span class="preco">R$ 18,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('camarao')">&lt;</button>
+                        <span id="quantidade_camarao_desejada">0</span>
+                        <button onclick="aumentarQuantidade('camarao')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('camarao',18.0)">Comprar</button>
                     </div>
                 </div>
 
-                <!--Item 9-->
-                <div class="item">
-                    <img src="fotos/cuscuz_calabresa.avif" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz com Calabresa Acebolada</h3>
-                    <p>Cuscuz de milho acompanhado de calabresa acebolada.</p>
-                    <span class="preco">R$ 13,00</span>
+
+        </section>
+
+        <section id="bebidas">
+            <div class="gambiarra">
+                
+            </div>
+            <h2>Bebidas</h2>
+            <div class="cardapio" >
+                <div class="item" id="lataCoca">
+                    <img src="fotos/coca_lata.png" alt="Cuscuz Marroquino">
+                    <h3>Coca-cola em lata</h3>
+                    <p>Geladinha para você</p>
+                    <span class="preco">R$ 5,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('lataCoca')">&lt;</button>
+                        <span id="quantidade_lataCoca_desejada">0</span>
+                        <button onclick="aumentarQuantidade('lataCoca')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('lataCoca',5.0)">Comprar</button>
                     </div>
                 </div>
 
-                <!--Item 10-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz de milho servido com costela desfiada</h3>
-                    <p>Tradicional cuscuz de milho, servido com manteiga derretida.</p>
-                    <span class="preco">R$ 16,00</span>
+                <div class="item" id="cafe">
+                    <img src="fotos/cafe.jpeg" alt="Cuscuz Marroquino">
+                    <h3>Café</h3>
+                    <p>O café mais amado do nordeste</p>
+                    <span class="preco">R$ 3,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('cafe')">&lt;</button>
+                        <span id="quantidade_cafe_desejada">0</span>
+                        <button onclick="aumentarQuantidade('cafe')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('cafe',3.0)">Comprar</button>
+                    </div>
+                </div>
+                <div class="item" id="sucoLaranja">
+                    <img src="fotos/suco_laranja.webp" alt="Cuscuz Marroquino">
+                    <h3>Suco de Laranja</h3>
+                    <p>Geladinho para você</p>
+                    <span class="preco">R$ 5,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('sucoLaranja')">&lt;</button>
+                        <span id="quantidade_sucoLaranja_desejada">0</span>
+                        <button onclick="aumentarQuantidade('sucoLaranja')">&gt;</button>
+                    </div>
+                    <div>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('sucoLaranja',5.0)">Comprar</button>
                     </div>
                 </div>
 
-                <!--Item 11-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz com Creme de Queijo</h3>
-                    <p>Cuscuz de milho com um cremoso creme de queijo.</p>
-                    <span class="preco">R$ 14,00</span>
-                   
-                    <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
-                    </div>
-                    <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
-                    </div>
                 </div>
+                <div class="conteiner_seta">
+                    <a href="#topo">
+                        <div class="seta"></div>
+                        
+                    </a> 
+                 </div>
+        </section>
 
-                <!--Item 12-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz com Omelete</h3>
-                    <p>Cuscuz de milho servido com um delicioso omelete.</p>
-                    <span class="preco">R$ 11,00</span>
+        <section id="sobremesas">
+            <div class="gambiarra">
+                
+            </div>
+            <h2>Sobremesas</h2>
+            <div class="cardapio">
+                <div class="item" id="pudin">
+                    <img src="fotos/pudin.jpeg" alt="Cuscuz Marroquino">
+                    <h3>Pudim</h3>
+                    <p>Geladinho para você</p>
+                    <span class="preco">R$ 5,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('pudin')">&lt;</button>
+                        <span id="quantidade_pudim_desejada">0</span>
+                        <button onclick="aumentarQuantidade('pudin')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('pudin',5.0)">Comprar</button>
                     </div>
                 </div>
-
-                <!--Item 13-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz com Peixe</h3>
-                    <p>Cuscuz de milho acompanhado de peixe fresquinho.</p>
-                    <span class="preco">R$ 17,00</span>
+                <div class="item" id="rapadura">
+                    <img src="fotos/rapadura.jpg" alt="Cuscuz Marroquino">
+                    <h3>Rapadura</h3>
+                    <p>Achadinho do nordeste</p>
+                    <span class="preco">R$ 3,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('rapadura')">&lt;</button>
+                        <span id="quantidade_rapadura_desejada">0</span>
+                        <button onclick="aumentarQuantidade('rapadura')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('rapadura',3.0)">Comprar</button>
                     </div>
                 </div>
-
-                                <!--Item 13-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz com Peixe</h3>
-                    <p>Cuscuz de milho acompanhado de peixe fresquinho.</p>
-                    <span class="preco">R$ 17,00</span>
-                   
-                    <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
-                    </div>
-                    <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
-                    </div>
-                </div>
-                <!--Item 14-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz com Coco</h3>
-                    <p>Cuscuz de milho com saborosas lascas de coco.</p>
+                <div class="item" id="bolodaMoca">
+                    <img src="fotos/bolo_moca.webp" alt="Cuscuz Marroquino">
+                    <h3>Bolo da Moça</h3>
+                    <p>Tradição do nordeste</p>
                     <span class="preco">R$ 10,00</span>
                    
                     <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
+                        <button onclick="diminuirQuantidade('bolodaMoca')">&lt;</button>
+                        <span id="quantidade_bolodaMoca_desejada">0</span>
+                        <button onclick="aumentarQuantidade('bolodaMoca')">&gt;</button>
                     </div>
                     <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('bolodaMoca',10.0)">Comprar</button>
                     </div>
                 </div>
-
-                <!--Item 15-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz com Cheddar e Bacon</h3>
-                    <p>Cuscuz de milho com cheddar derretido e bacon crocante.</p>
-                    <span class="preco">R$ 14,00</span>
-                   
-                    <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
-                    </div>
-                    <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
-                    </div>
-                </div>
-
-                </div>
-
-                <!--Item 16-->
-                <div class="item">
-                    <img src="fotos/cuscuz.jpg" alt="Cuscuz Marroquino">
-                    <h3>Cuscuz com Tudo Dentro</h3>
-                    <p> Cuscuz de milho com uma mistura deliciosa de todos os ingredientes.</p>
-                    <span class="preco">R$ 20,00</span>
-                   
-                    <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('marroquino')">&lt;</button>
-                        <span id="quantidade_marroquino_desejada">0</span>
-                        <button onclick="aumentarQuantidade('marroquino')">&gt;</button>
-                    </div>
-                    <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('marroquino',12.9)">Comprar</button>
-                    </div>
-                </div>
-
-                </div>
-                <div class="conteiner_seta">
-                    <a href="#topo">
-                        <div class="seta"></div>
-                        
-                    </a> 
-                 </div>
-
-
-        </section>
-
-        <section id="recheios">
-            <div class="gambiarra">
-                
-            </div>
-            <h2>Recheios</h2>
-            <div class="cardapio">
-                <div class="item">
-                    <h3>Carne Moída</h3>
-                    <p>Carne moída refogada com temperos.</p>
-                    <span class="preco">R$ 3,00</span>
-                    <div>
-                        <button class="btn_comprar">Comprar</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3>Frango Desfiado</h3>
-                    <p>Frango desfiado com catupiry e requeijão.</p>
-                    <span class="preco">R$ 4,50</span>
-                    <div class="quantidade_produto">
-                        <button onclick="diminuirQuantidade('frango')">&lt;</button>
-                        <span id="quantidade_frango_desejada">0</span>
-                        <button onclick="aumentarQuantidade('frango')">&gt;</button>
-                    </div>
-                    <div>
-                        <button class="btn_comprar" onclick="adicionarCarrinho('frango',4.5)">Comprar</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3>Legumes</h3>
-                    <p>Legumes refogados com ervas frescas.</p>
-                    <span class="preco">R$ 2,00</span>
-                    <div>
-                        <button class="btn_comprar">Comprar</button>
-                    </div>
-                </div>
-                </div>
-                <div class="conteiner_seta">
-                    <a href="#topo">
-                        <div class="seta"></div>
-                        
-                    </a> 
-                 </div>
-        </section>
-
-        <section id="acompanhamentos">
-            <div class="gambiarra">
-                
-            </div>
-            <h2>Acompanhamentos</h2>
-            <div class="cardapio">
-                <div class="item">
-                    <h3>Salada Verde</h3>
-                    <p>Salada verde com tomate, cebola e vinagrete.</p>
-                    <span class="preco">R$ 3,00</span>
-                    <div>
-                        <button class="btn_comprar">Comprar</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3>Feijão Tropeiro</h3>
-                    <p>Feijão tropeiro com linguiça calabresa e ovo.</p>
+                <div class="item" id="cocada">
+                    <img src="fotos/cocada.webp" alt="Cuscuz Marroquino">
+                    <h3>Cocada</h3>
+                    <p>O doce que vai te fazer feliz</p>
                     <span class="preco">R$ 5,00</span>
+                   
+                    <div class="quantidade_produto">
+                        <button onclick="diminuirQuantidade('cocada')">&lt;</button>
+                        <span id="quantidade_cocada_desejada">0</span>
+                        <button onclick="aumentarQuantidade('cocada')">&gt;</button>
+                    </div>
                     <div>
-                        <button class="btn_comprar">Comprar</button>
+                        <button class="btn_comprar" onclick="adicionarCarrinho('cocada',5.0)">Comprar</button>
                     </div>
                 </div>
-                <div class="item">
-                    <h3>Macarrão ao Alho</h3>
-                    <p>Macarrão ao alho com azeite e ervas frescas.</p>
-                    <span class="preco">R$ 4,00</span>
-                    <div>
-                        <button class="btn_comprar">Comprar</button>
-                        <button>quantidade </button>
-                    </div>
-                    
-                </div>
-                </div>
+
+            </div>
 
                 <div class="conteiner_seta">
                     <a href="#topo">
